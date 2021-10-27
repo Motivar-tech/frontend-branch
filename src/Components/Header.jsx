@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
  return(
@@ -13,7 +14,7 @@ const Header = () => {
                        <div className="header-contact text-lg-left text-center">
                            <ul>
 
-                               <li><a href="mailto:hello@motivar.com.ng"><img src="images/all-icon/email.png" alt="icon" /><span>hello@motivar.com.ng</span></a></li>
+                               <li><a href="mailto:hello@motivar.com.ng"><img src="images/all-icon/email.png" alt="icon" /><span>hello@motivar</span></a></li>
                            </ul>
                        </div>
                    </div>
@@ -27,9 +28,9 @@ const Header = () => {
                <div className="row">
                    <div className="col-lg-4 col-md-4">
                        <div className="logo">
-                           <a href="index.php">
+                           <Link to="/">
                                <img src="images/logo.png" alt="Logo" />
-                           </a>
+                           </Link>
                        </div>
                    </div>
                    <div className="col-lg-8 col-md-8">
@@ -44,8 +45,8 @@ const Header = () => {
                                </div>
                            </div>
                            <div className="button float-left">
-                               <a href="user_signup.php" className="main-btn">Sign Up</a>
-                               <a href="user_signin.php" className="main-btn">Sign In</a>
+                               <Link to="/signup" className="main-btn">Sign Up</Link>
+                               <Link to="/auth" className="main-btn">Sign In</Link>
                            </div>
                        </div>
                    </div>
@@ -67,12 +68,12 @@ const Header = () => {
                            <div className="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                <ul className="navbar-nav mr-auto">
                                    <li className="nav-item">
-                                       <a className="active" href="index.php">Home</a>
+                                       <Link className="active" to="/auth">Home</Link>
 
                                    </li>
 
                                    <li className="nav-item">
-                                       <a href="about.php">About Us</a>
+                                       <Link to="/about">About Us</Link>
                                    </li>
 
 

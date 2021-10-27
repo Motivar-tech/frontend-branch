@@ -3,14 +3,13 @@
 import React from "react";
 import Header from '../Header';
 import Footer from '../Footer'
+import { Link } from "react-router-dom";
 
 const Aboutpage = () => {
     return(
         <>
         <Header />
-
-
-        <section id="page-banner" className="pt-105 pb-110 bg_cover" data-overlay="8" style="background-image: url(images/page-banner-1.jpg)">
+        <section id="page-banner" className="pt-105 pb-110 bg_cover" data-overlay="8" style={{backgroundImage: `url('images/page-banner-1.jpg')`}}>
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
@@ -18,7 +17,7 @@ const Aboutpage = () => {
                         <h2>About Us</h2>
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
-                                <li className="breadcrumb-item"><a href="index.php">Home</a></li>
+                                <li className="breadcrumb-item"><Link to="/auth">Home</Link></li>
                                 <li className="breadcrumb-item active" aria-current="page">About Us</li>
                             </ol>
                         </nav>
@@ -78,13 +77,13 @@ const Aboutpage = () => {
 
 
 
-    <section id="testimonial" className="bg_cover pt-115 pb-120" data-overlay="8" style="background-image: url(images/bg-2.jpg)">
+    <section id="testimonial" className="bg_cover pt-115 pb-120" data-overlay="8" style={{backgroundImage: `url('images/bg-2.jpg')`}}>
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
                     <div className="section-title pb-40">
 
-                        <span style="color:#11d99b; font-size:15px; font-weight: 700">WE ARE ENSURING YOUNG PEOPLE ACCESS DIGITAL ACCESS DIGITAL LEARNING PLATFORMS AND ASSURING THEY COMPLETE THE COURSES TO GAIN REQUIRED KNOWLEDGE.</span>
+                        <span style={{color:  "#11d99b", fontSize: "15px", fontWeight: "700"}}>WE ARE ENSURING YOUNG PEOPLE ACCESS DIGITAL ACCESS DIGITAL LEARNING PLATFORMS AND ASSURING THEY COMPLETE THE COURSES TO GAIN REQUIRED KNOWLEDGE.</span>
                     </div>
                 </div>
             </div>
@@ -99,7 +98,7 @@ const Aboutpage = () => {
                         </div>
                         <div className="testimonial-cont">
                             <p>We believe sincerely that every African child has the capacity for greatness. We simply need to design pathways to ensure they access the required skills and training to flourish in this century regardless of gender, social className or faith.</p>
-                            <span style="color:#00aa88; font-weight: 900"><strong>LAUNCH WITH US</strong></span>
+                            <span style={{color: "#00aa88", fontWeight: "900"}}><strong>LAUNCH WITH US</strong></span>
                             <span>Bsc, Engineering</span>
                         </div>
                     </div>
@@ -114,7 +113,7 @@ const Aboutpage = () => {
                         </div>
                         <div className="testimonial-cont">
                             <p>More than anything else. This work will require the social and financial capital of forward thinking, experienced and long-term minded individuals or institutions looking to weaken educational inequalities and accelerate digital expansion in Africa.</p>
-                            <span style="color:#00aa88; font-weight: 900"><strong>INVEST WITH US</strong></span>
+                            <span style={{color: "#00aa88",  fontWeight: "900"}}><strong>INVEST WITH US</strong></span>
                             <span>Bsc, Engineering</span>
                         </div>
                     </div>
@@ -129,7 +128,7 @@ const Aboutpage = () => {
                         </div>
                         <div className="testimonial-cont">
                             <p>We want to partner with mission-aligned leaders & organisations to help young people surmount barriers to learning and access skills and training that will ensure social and economic mobility for them.</p>
-                            <span style="color:#00aa88; font-weight: 900"><strong>PARTNER WITH US</strong></span>
+                            <span style={{color: "#00aa88", fontWeight: "900"}}><strong>PARTNER WITH US</strong></span>
                         </div>
                     </div>
                 </div>

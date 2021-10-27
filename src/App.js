@@ -10,7 +10,7 @@ import SignupPage from './Components/Pages/SIgnupPage';
 const App = () =>{
     return(
        <>
-       <Route path='/' exact component={Homepage} />
+       <Route path='/' exact component={Authpage} />
        <Route path='/auth' exact component={Authpage} />
        <Route path='/dashboard' exact component={Dashboard} />
        <Route path='/About' exact component={Aboutpage} />
