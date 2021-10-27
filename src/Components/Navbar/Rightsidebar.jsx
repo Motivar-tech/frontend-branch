@@ -6,6 +6,25 @@ export default class Rightsidebar extends Component {
   render() {
     return (
       <>
+
+    <div id="search">
+        <button id="close" type="button" className="close btn btn-primary btn-icon btn-icon-mini btn-round">x</button>
+        <form action="" method="">
+            <input type="search" value="" placeholder="Search..." />
+            <button type="submit" className="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+      <div className="navbar-right">
+        <ul className="navbar-nav">
+            <li><a href="#search" className="main_search" title="Search..."><i className="zmdi zmdi-search"></i></a></li>
+
+            <li><a href="javascript:void(0);" className="js-right-sidebar" title="Setting"><i className="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
+            <li><a href="admin_logout.php" className="mega-menu" title="Sign Out"><i className="zmdi zmdi-power"></i></a></li>
+        </ul>
+    </div>
+
+
          <aside id="rightsidebar" className="right-sidebar">
                     <ul className="nav nav-tabs sm">
                         <li className="nav-item"><a className="nav-link active" data-toggle="tab" href="#setting"><i className="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>

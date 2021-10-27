@@ -9,7 +9,7 @@ export default class Homepage extends Component {
   render() {
     return (
       <>
-            `<Header />
+            <Header />
 
               <section id="slider-part" className="slider-active">
                   <div className="single-slider bg_cover pt-150" style={{backgroundImage: `url('images/slider/s-1.JPG')`}} data-overlay="4">
