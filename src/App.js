@@ -9,7 +9,7 @@ import AdminProfile from './Components/Pages/Admin/Profilepage';
 import Dashboard from './Components/Pages/User/Dashboardpage';
 import Profile from './Components/Pages/User/Profilepage';
 import SignupPage from './Components/Pages/SIgnupPage';
-import Profilepage from './Components/Pages/User/Profilepage';
+
 
 const App = () =>{
     return(
